@@ -27,7 +27,12 @@ npm install
 
 3. Configure o banco de dados no arquivo `.env`:
 ```env
-DATABASE_URL="postgresql://postgres:password@localhost:5432/expense_db?schema=public"
+DB_HOST=localhost
+DB_PORT=1234
+DB_USER=postgres
+DB_PASS=senha
+DB_NAME=nome_banco_de_dados
+DATABASE_URL=postgres://postgres:{password}@{host}/{db}
 JWT_SECRET="your-secret-key-here"
 ```
 
